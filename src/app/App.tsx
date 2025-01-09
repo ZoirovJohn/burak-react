@@ -19,9 +19,11 @@ function App() {
             Create React App on TypeScript with REDUX
           </Typography>
         </Box>
-        <RippleBadge badgeContent={4}>
-          <Button variant="contained">Contained</Button>
-        </RippleBadge>
+        <Box>
+          <RippleBadge badgeContent={4}>
+            <Button variant="contained">Contained</Button>
+          </RippleBadge>
+        </Box>
       </Stack>
     </Container>
   );
