@@ -8,32 +8,20 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Switch, useLocation } from "react-router-dom";
 import { HomePage } from "./screens/homePage";
 import { ProductPage } from "./screens/productsPage";
 import { OrdersPage } from "./screens/ordersPage";
 import { UserPage } from "./screens/userPage";
+import { Footer } from "./components/footer";
 
 function App() {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">HomePage</Link>
-          </li>
-          <li>
-            <Link to="/products">Products</Link>
-          </li>
-          <li>
-            <Link to="/orders">Orders</Link>
-          </li>
-          <li>
-            <Link to="/member-page">UserPage</Link>
-          </li>
-        </ul>
-      </nav>
+  const location = useLocation();
+  console.log("location:", location);
 
+  return (
+    <>
+      {location.pathname === "/" ? "HomeNavbar/" : "OtherNavbar/"}
       <Switch>
         <Route path="/products">
           <ProductPage />
@@ -48,7 +36,8 @@ function App() {
           <HomePage />
         </Route>
       </Switch>
-    </div>
+      <Footer />
+    </>
   );
 }
 
