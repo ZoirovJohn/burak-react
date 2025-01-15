@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Basket from "./Basket";
 
 export default function HomeNavbar() {
-  const authMember = null;
+  const authMember = true;
 
   return (
     <div className="home-navbar">
@@ -67,13 +67,13 @@ export default function HomeNavbar() {
               World's Most Delicious Cousine
             </Box>
             <Box className={"well-txt"}>The Choice, not just a choice</Box>
-            <Box className={"service-txt"}>24 houra service</Box>
+            <Box className={"service-txt"}>24 hours service</Box>
             <Box className={"signup"}>
               {!authMember ? (
                 <Button
                   variant={"contained"}
                   className={"signup-button"}
-                >SIGN up</Button>
+                >SIGN UP</Button>
               ) : null}
             </Box>
           </Stack>
