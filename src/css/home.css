@@ -246,3 +246,53 @@
   transform: scale(1.5);
   overflow: hidden;
 }
+
+/** ACTIVE USERS **/
+
+.homepage .active-users-frame {
+  width: 100%;
+  height: 605px;
+  background: #f8f8ff;
+  display: flex;
+}
+
+.homepage .main {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .active-users-frame .category-title {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.homepage .active-users-frame .main .cards-frame {
+  width: 100%;
+  margin: 47px 2px 2px 2px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homepage .active-users-frame .main .card {
+  height: 335px;
+  width: 290px;
+  cursor: pointer;
+}
+
+
+
+.homepage .active-users-frame .person-name {
+  display: flex;
+  justify-content: center;
+  background-color: #fafbfb;
+  font-style: normal;
+  font-size: 18px;
+  
+}
+
+
