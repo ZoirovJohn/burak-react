@@ -125,7 +125,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 56px;
+  padding-right: 56px;
 }
 
 .products-page .products .dishes-filter-section .dishes-filter-box .order {
@@ -154,8 +154,7 @@
 .products-page .products .list-category-section .product-category {
   position: relative;
   display: flex;
-  flex-direction: column;
-  margin-right: 22px;
+  flex-direction: column-reverse;
   margin-top: 25px;
 
   width: auto;
@@ -174,11 +173,10 @@
   height: auto;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: center;
 
-  margin-left: 30px;
 }
 
 .products-page
@@ -191,11 +189,10 @@
   height: 36px;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #d7b586;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-top: 50px;
   transform: rotate(-90deg);
 }
 
@@ -206,17 +203,17 @@
   .category-main
   button
   span {
-  width: 42px;
+  width: 47px;
   height: 15.882px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #343434;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
+
 }
 
 .products-page .products .list-category-section .product-wrapper {

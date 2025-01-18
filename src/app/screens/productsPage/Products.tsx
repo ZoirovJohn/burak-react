@@ -27,7 +27,7 @@ export default function Products() {
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Stack className={"avatar-big-box"}>
             <Stack className="top-content">
-              <Box className="text">Burak Reastaurant</Box>
+              <Box className="text">Burak Restaurant</Box>
               <Box className="search-container">
                 <input
                   type="text"
@@ -70,7 +70,7 @@ export default function Products() {
                 <Button variant="contained" color="secondary">
                   <span>Salad</span>
                 </Button>
-                <Button variant="contained" color="secondary">
+                <Button variant="contained" color="primary">
                   <span>Dish</span>
                 </Button>
               </div>
