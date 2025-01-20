@@ -23,8 +23,12 @@ const products = [
 export default function Products() {
   return (
     <div className={"products"}>
-      <Container>
-        <Stack flexDirection={"column"} alignItems={"center"}>
+      <Container sx={{ padding: "0E" }}>
+        <Stack
+          flexDirection={"column"}
+          sx={{ width: "1300px" }}
+          alignItems={"center"}
+        >
           <Stack className={"avatar-big-box"}>
             <Stack className="top-content">
               <Box className="text">Burak Restaurant</Box>
@@ -59,19 +63,19 @@ export default function Products() {
             <Stack className="product-category">
               <div className="category-main">
                 <Button variant="contained" color="secondary">
-                  <span>Other</span>
+                  Other
                 </Button>
                 <Button variant="contained" color="secondary">
-                  <span>Desert</span>
+                  Desert
                 </Button>
                 <Button variant="contained" color="secondary">
-                  <span>Drink</span>
+                  Drink
                 </Button>
                 <Button variant="contained" color="secondary">
-                  <span>Salad</span>
+                  Salad
                 </Button>
                 <Button variant="contained" color="primary">
-                  <span>Dish</span>
+                  Dish
                 </Button>
               </div>
             </Stack>
@@ -95,7 +99,7 @@ export default function Products() {
                         <Button className="view-btn" sx={{ right: "36px" }}>
                           <Badge badgeContent={20} color="secondary">
                             <RemoveRedEyeIcon
-                              sx={{ color: 20 ? "gray" : "white" }}
+                              sx={{ color: true ? "gray" : "white" }}
                             />
                           </Badge>
                         </Button>
@@ -159,7 +163,7 @@ export default function Products() {
 
       <div className={"address"}>
         <Container>
-          <Stack className="address-are">
+          <Stack className="address-are" sx={{ width: "1300px" }}>
             <Box className="title">Our address</Box>
             <iframe
               style={{ marginTop: "60px" }}
