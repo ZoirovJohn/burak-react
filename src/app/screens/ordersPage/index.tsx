@@ -57,12 +57,12 @@ export default function OrdersPage() {
                   src="/icons/default-user.svg"
                   className="order-user-avatar"
                 />
-                {/* <div className="order-user-icon-box">
+                <div className="order-user-icon-box">
                   <img
                     src="/icons/user-badge.svg"
                     className="order-user-prof-img"
                   />
-                </div> */}
+                </div>
               </div>
               <span className="order-user-name">Martin</span>
               <span className="order-user-prof">Justin</span>
