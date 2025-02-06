@@ -21,17 +21,17 @@ class Test extends Component {
   };
 
   componentDidMount() {
-    console.log("componentDidMount");
+    console.log("componentDidMount1");
     // runs after first render => RETRIEVE FROM BACKEND SERVER
   }
 
   componentWillUnmount() {
-    console.log("componentWillUnmount");
+    console.log("componentWillUnmount1");
     // runs before component unmount
   }
 
   componentDidUpdate() {
-    console.log("componentDidUpdate");
+    console.log("componentDidUpdate1");
   }
 
   render() {
