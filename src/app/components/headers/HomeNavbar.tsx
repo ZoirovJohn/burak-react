@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function HomeNavbar() {
   const authMember = null;
   const [count, setCount] = useState<number>(0);
-  const [value, setValue] = useState<boolean>(true);
+  const [value, setValue] = useState({});
 
   useEffect(() => {
     console.log("componentDidMount", count); // DATA FETCH
@@ -20,7 +20,7 @@ export default function HomeNavbar() {
   /** HANDLERS */
 
   const buttonHandler = () => {
-    setValue(!value);
+    setValue({ ...value });
   };
 
   return (
