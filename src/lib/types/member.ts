@@ -2,7 +2,7 @@ import { MemberStatus, MemberType } from "../enums/member.enum";
 
 export interface Member {
     _id: string;
-    memberType?: MemberType;
+    memberType: MemberType;
     memberStatus?: MemberStatus;
     memberNick: string;
     memberPhone: string;

@@ -259,7 +259,7 @@
   .order-info-box
   .member-box
   .order-user-name {
-  width: 76px;
+  width: auto;
   height: 37px;
   color: #08090d;
   font-family: "Commissioner";
@@ -275,10 +275,10 @@
   .order-info-box
   .member-box
   .order-user-prof {
-  width: 53px;
+  width: auto;
   height: 37px;
   color: #a1a1a1;
-  font-family: Commissioner;
+  font-family: "Commissioner";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
